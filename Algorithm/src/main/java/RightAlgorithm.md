@@ -1,6 +1,6 @@
 **Choosing the right Algorithm**
 
-Algorithm is a way of organizing data in a computer and it helps to use data efficiently. The developer must choose the appropriate Algorithm for better performance. If the developer chooses bad Algorithm, the system will not perform well. The Big O notation explained [here](../Algorithm/src/com/deepak/algorithms/Sorting/TimeAndSpaceComplexity.md) helps to analysis algorithm performance. 
+Algorithm is a way of organizing data in a computer and it helps to use data efficiently. The developer must choose the appropriate Algorithm for better performance. If the developer chooses bad Algorithm, the system will not perform well. The Big O notation explained [here](TimeAndSpaceComplexity.md) helps to analysis algorithm performance. 
 
 Here is the explanation for usage of some common algorithms, 
 
