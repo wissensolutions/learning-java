@@ -1,8 +1,8 @@
 /**
  * Class for Counting sort implementation
  * <p>
- * Copyright (c) 2016, Apple Inc.
- * All rights reserved.
+ * Created by Amar Veerepalli
+ *
  */
 package sorting;
 

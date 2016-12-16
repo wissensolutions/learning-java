@@ -1,7 +1,7 @@
 /**
  * Class for Bubble Sort
  * <p>
- * All rights reserved.
+ * Created by Amar Veerepalli
  */
 package sorting;
 
