@@ -1,17 +1,17 @@
 Implementation of Algorithms in Java
 
 1. [ ] **Analysis of Algorithms**
-    - [X] [Time and Space Complexity](../Algorithm/src/TimeAndSpaceComplexity.md)
+    - [X] [Time and Space Complexity](../Algorithm/src/main/java/TimeAndSpaceComplexity.md)
 
 2. [X] **Searching Algorithms**
-    - [X] [Linear Search](../Algorithm/src/searching/LinearSearch.java)
-    - [X] [Binary Search](../Algorithm/src/searching/BinarySearch.java)
+    - [X] [Linear Search](../Algorithm/src/main/java/searching/LinearSearch.java)
+    - [X] [Binary Search](../Algorithm/src/main/java/searching/BinarySearch.java)
 
 2. [ ] **Sorting Algorithms**
-	- [X] [Selection Sort](../Algorithm/src/sorting/SelectionSort.java)
-	- [X] [Insertion Sort](../Algorithm/src/sorting/InsertionSort.java)
-	- [X] [Bubble Sort](../Algorithm/src/sorting/BubbleSort.java)
-	- [X] [Merge Sort](../Algorithm/src/sorting/MergeSort.java)
-	- [X] [Quick Sort](../Algorithm/src/sorting/QuickSort.java)
-	- [X] [Counting Sort](../Algorithm/src/sorting/CountingSort.java)
+	- [X] [Selection Sort](../Algorithm/src/main/java/sorting/SelectionSort.java)
+	- [X] [Insertion Sort](../Algorithm/src/main/java/sorting/InsertionSort.java)
+	- [X] [Bubble Sort](../Algorithm/src/main/java/sorting/BubbleSort.java)
+	- [X] [Merge Sort](../Algorithm/src/main/java/sorting/MergeSort.java)
+	- [X] [Quick Sort](../Algorithm/src/main/java/sorting/QuickSort.java)
+	- [X] [Counting Sort](../Algorithm/src/main/java/sorting/CountingSort.java)
 
