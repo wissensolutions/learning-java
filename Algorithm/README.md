@@ -14,5 +14,5 @@ Implementation of Algorithms in Java
 	- [X] [Bubble Sort](../Algorithm/src/main/java/sorting/BubbleSort.java)
 	- [X] [Merge Sort](../Algorithm/src/main/java/sorting/MergeSort.java)
 	- [X] [Quick Sort](../Algorithm/src/main/java/sorting/QuickSort.java)
-	- [X] [Counting Sort](../Algorithm/src/main/java/sorting/CountingSort.java)
+	- [ ] [Counting Sort](../Algorithm/src/main/java/sorting/CountingSort.java)
 
