@@ -60,3 +60,4 @@ nbdist/
 .nb-gradle/
 github.pub
 github
+Algorithm.iml

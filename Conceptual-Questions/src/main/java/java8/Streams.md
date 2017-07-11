@@ -51,7 +51,7 @@
                             .collect(toList());
 
     ```
-- Intermediate opertations: Stream operations that can be connected are called intermediate operations. 
+- Higher efficiency with lazyness ( Intermediate opertations): Stream operations that can be connected are called intermediate operations. 
 They can be connected together because their return type is a Stream. Operations that close a stream pipeline are called terminal operations. They produce a result from a pipeline such as a List, an Integer, or even void (any non-Stream type).
      Intermediate operations do not perform any processing until a terminal operation is invoked on the stream pipeline; they are “lazy.” This is because intermediate operations can usually be “merged” and processed into a single pass by the terminal operation.
     ```
