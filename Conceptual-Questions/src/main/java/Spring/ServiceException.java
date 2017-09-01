@@ -1,9 +1,5 @@
 /**
  * ServiceException.java
- * RepublishService
- * 
- * Copyright (c) 2015, Apple Inc.
- * All rights reserved.
  */
 package Spring;
 
