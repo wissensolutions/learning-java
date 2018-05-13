@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Algorithm</module>
+        <module>Conceptual-Questions</module>
         <module>DataStructures</module>
     </modules>
 
