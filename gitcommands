@@ -1,0 +1,20 @@
+Creating sub repository 
+
+
+
+1. do git clone
+git clone <MAIN_REPO_URL>
+
+2. Check out all active branches. We need to use below command for all active branches
+git branch -t develop origin/develop
+...
+...
+
+3. Write specific folder
+git filter-branch --prune-empty --subdirectory-filter <SUB_FOLDER_NAME> -- --all
+
+4. Set upstream
+git remote set-url origin <NEW_SUB_FOLDER_REPO>
+
+5. Push
+git push -u origin --all
