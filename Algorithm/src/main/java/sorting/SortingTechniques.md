@@ -9,8 +9,11 @@ Comparision algorithms :
      3. It is stable; i.e., it does not change the relative order of elements with equal keys.
      4. In-place; i.e., only requires a constant amount O(1) of additional memory space.
    - [Implementation](./InsertionSort.java)
-  
+   
+   ![insertion-sort](https://user-images.githubusercontent.com/24597513/46922264-36cc6900-cfbb-11e8-9a7c-be40bec3631f.png)
+
   See more at: http://www.java2novice.com/java-sorting-algorithms/insertion-sort/#sthash.chHgGH9U.dpuf
+  
 2. Bubble Sort: Bubble sort is a comparison​-based algorithm that compares each pair of elements in an array and swaps them if they are out of order until the entire array is sorted. For each element in the list, the algorithm compares every pair of elements.   
     *Advantages:*
     1. Easy to understand.
@@ -48,7 +51,9 @@ Comparision algorithms :
     * The number of times the sort passes through the array is one less than the number of items in the array.
     * In the selection sort, the inner loop finds the next smallest (or largest) value and
     * the outer loop places that value into its proper location.
-    
+  
+  ![selectionsort](https://user-images.githubusercontent.com/24597513/46922239-ee14b000-cfba-11e8-8339-0de212447d08.jpg)
+  
      - See more at: http://www.java2novice.com/java-sorting-algorithms/selection-sort/#sthash.z3AacPw6.dpuf
      
     - [Implementation](./SelectionSort.java)
