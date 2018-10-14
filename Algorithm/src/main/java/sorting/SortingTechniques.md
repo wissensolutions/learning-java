@@ -28,6 +28,8 @@ Comparision algorithms :
   
     
 3.  Merge Sort: Mergesort is a comparison-based algorithm that focuses on how to merge together two pre-sorted arrays such that the resulting array is also sorted.
+
+![merge-sort-tutorial](https://user-images.githubusercontent.com/24597513/46922327-28328180-cfbc-11e8-8c32-ae12eb416acd.png)
     
     *Time Complexity*
     * Whenever there are inner loops associated, complexity is n^2. In this case, 
@@ -42,9 +44,13 @@ Comparision algorithms :
      * Select a pivot, normally the middle one
      * From both ends, swap elements and make left elements < pivot and all right > pivot
      * Recursively sort left part and right part
-    - [Implementation](./QuickSort.java)
+    - [Implementation](./QuickSort.java) 
      
+![quicksort_partition1](https://user-images.githubusercontent.com/24597513/46922341-8f503600-cfbc-11e8-9b82-1bf5b3fc3534.png)
+
+
 5. Heap Sort:TBA
+![heapifyingelements](https://user-images.githubusercontent.com/24597513/46922389-4ea4ec80-cfbd-11e8-924d-a57e64bf6d86.png)
 
 6. Selection Sort: The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. 
     * During each pass, the unsorted element with the smallest (or largest) value is moved to its proper position in the array.
