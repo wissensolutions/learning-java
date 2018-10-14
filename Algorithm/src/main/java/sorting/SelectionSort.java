@@ -1,7 +1,7 @@
 /**
  * Class for InsertionSort implementation
  *
- * Created by Amar Veerepalli
+ * @author WissenSolutions.
  */
 package sorting;
 
