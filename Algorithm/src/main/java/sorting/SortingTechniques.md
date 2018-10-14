@@ -79,7 +79,7 @@ Comparision algorithms :
       
     - [Implementation](./CountingSort.java)
      
-![alt text](resources/SortingComparision.png "Sorting Comparision")
+![Sorting comparision](https://user-images.githubusercontent.com/24597513/46922505-e2c38380-cfbe-11e8-829e-e25ba9e25c27.png)
 
 **Recommendation**
 * Small sets of Data : Bubble sort
