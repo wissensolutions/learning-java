@@ -21,7 +21,8 @@ Comparision algorithms :
     *<p>Disadvantages</p>*
     1. Very expensive, O(n2)in worst case and average case.
     2. It does more element assignments than its counterpart, insertion sort.
-    - [Implementation](./BubbleSort.java)
+   - [Implementation](./BubbleSort.java)
+  
     
 3.  Merge Sort: Mergesort is a comparison-based algorithm that focuses on how to merge together two pre-sorted arrays such that the resulting array is also sorted.
     
@@ -30,7 +31,7 @@ Comparision algorithms :
     * Best - O(n log(n))
     * Average - O(n log(n))
     * Worst - O(n log(n))
-    - [Implementation](./MergeSort.java)
+   - [Implementation](./MergeSort.java)
 
 4. Quick Sort: Quicksort is a divide and conquer algorithm. It first divides a large list into two smaller sub-lists and then recursively sort the two sub-lists.
     
@@ -38,8 +39,7 @@ Comparision algorithms :
      * Select a pivot, normally the middle one
      * From both ends, swap elements and make left elements < pivot and all right > pivot
      * Recursively sort left part and right part
-     
-     - [Implementation](./QuickSort.java)
+    - [Implementation](./QuickSort.java)
      
 5. Heap Sort:TBA
 
@@ -51,7 +51,7 @@ Comparision algorithms :
     
      - See more at: http://www.java2novice.com/java-sorting-algorithms/selection-sort/#sthash.z3AacPw6.dpuf
      
-     - [Implementation](./SelectionSort.java)
+    - [Implementation](./SelectionSort.java)
 7. Counting Sort: Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
 
       Time Complexity: O(n+k) where n is the number of elements in input array and k is the range of input.
@@ -65,7 +65,7 @@ Comparision algorithms :
       4. Counting sort uses a partial hashing to count the occurrence of the data object in O(1).
       5. Counting sort can be extended to work for negative inputs also.
       
-     - [Implementation](./CountingSort.java)
+    - [Implementation](./CountingSort.java)
      
 ![alt text](resources/SortingComparision.png "Sorting Comparision")
 
