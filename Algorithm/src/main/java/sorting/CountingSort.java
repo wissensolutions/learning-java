@@ -1,7 +1,7 @@
 /**
  * Class for Counting sort implementation
  * <p>
- * Created by Amar Veerepalli
+ * @author WissenSolutions.
  *
  */
 package sorting;
