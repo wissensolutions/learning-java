@@ -1,84 +1,75 @@
 /**
  * Class for InsertionSort implementation
  *
- * Created by Amar Veerepalli
+ * @author WissenSolutions.
  */
 package sorting;
 
-import java.util.Arrays;
 
 /**
  * Class for MergeSort implementation
  *
  */
-public class MergeSort {
+public class MergeSort extends Sort {
 
-	/**
-	 * Main method to start the flow of program
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] valuesToBeSorted = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
-		System.out.println("******************* MERGE - SORT *******************");
-		int[] sortedValues = performMergeSort(valuesToBeSorted, 0, valuesToBeSorted.length - 1);
-		Arrays.stream(sortedValues).forEach(System.out::println);
+	@Override
+	int[] doSort(int[] inputArr) {
+		return performDivideAndMerge(inputArr,0,inputArr.length-1);
 	}
 
-	/**
-	 * Merge Sort implementation
-	 * 
-	 * <p>Time Complexity</p>
-	 * Whenever there are inner loops associated, complexity is n^2. In this case, 
-	 * Best - O(n log(n))
-	 * Average - O(n log(n))
-	 * Worst - O(n log(n))
-	 * 
-	 * @param iListOfValues - List of values passed in the request
-	 */
-	public static int[] performMergeSort(int[] iListOfValues, int iLowestPosition, int iHighestPosition) {
-		if (iLowestPosition < iHighestPosition) {
-			int middlePosition = iLowestPosition + (iHighestPosition - iLowestPosition) / 2;
-			performMergeSort(iListOfValues, iLowestPosition, middlePosition);
-			performMergeSort(iListOfValues, middlePosition + 1, iHighestPosition);
-			merge(iListOfValues, iLowestPosition, middlePosition, iHighestPosition);
+	private int[] performDivideAndMerge(int[] values, int lowestPosition, int highestPosition){
+		if (lowestPosition < highestPosition) {
+			int middlePosition = (lowestPosition + highestPosition) / 2;
+			performDivideAndMerge(values, lowestPosition, middlePosition);
+			performDivideAndMerge(values, middlePosition + 1, highestPosition);
+			//After division, merge them back
+			return merge(values, lowestPosition, middlePosition, highestPosition);
 		}
-		return iListOfValues;
+		return values;
 	}
 
-	/**
-	 * Method to merge two items from the list
-	 * @param iListOfValues
-	 * @param iLowestPosition
-	 * @param middlePosition
-	 * @param iHighestPosition
-	 * @return {@link int[]} 
-	 */
-	private static int[] merge(int[] iListOfValues, int iLowestPosition, int middlePosition, int iHighestPosition) {
-		int[] copyOfArrays = new int[iListOfValues.length];
-		for (int i = 0; i < iListOfValues.length; i++ ) {
-			copyOfArrays[i] = iListOfValues[i];
+	private int[] merge(int[] values, int lowestPosition, int middlePosition, int higestPosition){
+		//create a temp array from actual array
+		int leftArrayLength = middlePosition-lowestPosition+1; // 0 to middle
+		int rightArrayLength = higestPosition-middlePosition; // middle to arraySize
+		int[] leftArray = new int[leftArrayLength];
+		int[] rightArray = new int[rightArrayLength];
+
+		//Copy Data into temp arrays
+		for(int i=0;i<leftArrayLength;i++){
+			leftArray[i] = values[lowestPosition+i];
+		}
+		for(int j=0;j<rightArrayLength;j++){
+			rightArray[j] = values[middlePosition+1+j];
 		}
 
-		int i = iLowestPosition;
-		int j = middlePosition + 1;
-		int k = iLowestPosition;
-
-		while (i <= middlePosition && j <= iHighestPosition) {
-			if (copyOfArrays[i] <= copyOfArrays[j]) {
-				iListOfValues[k] = copyOfArrays[i];
-				i++;
-			} else {
-				iListOfValues[k] = copyOfArrays[j];
+		int i = 0; // initial index of left array
+		int j = 0; // initial index of right array
+		int k = lowestPosition; // initial index of merged array
+		while (i < leftArrayLength && j < rightArrayLength){
+			if(leftArray[i] > rightArray[j]){
+				values[k] = rightArray[j];
 				j++;
+			} else {
+				values[k] = leftArray[i];
+				i++;
 			}
 			k++;
 		}
-		while (i <= middlePosition) {
-			iListOfValues[k] = copyOfArrays[i];
-			k++;
-			i++;
-		}
-		return iListOfValues;
-	}
 
+		// Copy Remaining elements of left array
+		while(i<leftArrayLength){
+			values[k] = leftArray[i];
+			i++;
+			k++;
+		}
+
+		// Copy Remaining elements of right array
+		while(j<rightArrayLength){
+			values[k]=rightArray[j];
+			k++;
+			j++;
+		}
+		return values;
+	}
 }
