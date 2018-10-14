@@ -3,11 +3,11 @@ Sorting techniques will be two different types
     -  Comparision algorithm
     
 Comparision algorithms : 
-1. Insertion Sort: Insertion sort is a comparison-based algorithm that builds a final sorted array one element at a time. It iterates through an input array and removes one element per iteration, finds the place the element belongs in the array, and then inserts it there.
+1. Insertion Sort: Insertion sort is a comparison-based algorithm that builds a final sorted array one element at a time. It iterates through an input array and removes one element per iteration, finds the place the element belongs in the array, and then inserts it there. It compares with only left side of elements
      1. It is very simple.
      2. It is very efficient for small data sets.
      3. It is stable; i.e., it does not change the relative order of elements with equal keys.
-     4. In-place; i.e., only requires a constant amount O(1) of additional memory space.
+     4. In-place; i.e., only requires a constant amount O(1) of additional memory space. (only one temp variable)
    - [Implementation](./InsertionSort.java)
    
    ![insertion-sort](https://user-images.githubusercontent.com/24597513/46922264-36cc6900-cfbb-11e8-9a7c-be40bec3631f.png)
@@ -51,6 +51,7 @@ Comparision algorithms :
     * The number of times the sort passes through the array is one less than the number of items in the array.
     * In the selection sort, the inner loop finds the next smallest (or largest) value and
     * the outer loop places that value into its proper location.
+    * It compares with only right side of elements
   
   ![selectionsort](https://user-images.githubusercontent.com/24597513/46922239-ee14b000-cfba-11e8-8339-0de212447d08.jpg)
   
