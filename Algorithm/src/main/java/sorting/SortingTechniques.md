@@ -50,6 +50,7 @@ Comparision algorithms :
 
 
 5. Heap Sort:TBA
+
 ![heapifyingelements](https://user-images.githubusercontent.com/24597513/46922389-4ea4ec80-cfbd-11e8-924d-a57e64bf6d86.png)
 
 6. Selection Sort: The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. 
