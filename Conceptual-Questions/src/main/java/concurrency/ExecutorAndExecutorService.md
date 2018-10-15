@@ -3,8 +3,8 @@
 - Executors is basically an interface. It provides object which executes submitted tasks
 - It will not mandate the execution to be asynchronous. 
 - Sample Executors implementation is as below
-    -  [NewThreadExecutor](../Conceptual-Questions/src/main/java/concurrency/NewThreadExecutor.java)
-    -  [SampleThreadExecutor](../Conceptual-Questions/src/main/java/concurrency/SampleRunnableExecutor.java)
+    -  [NewThreadExecutor](./NewThreadExecutor.java)
+    -  [SampleThreadExecutor](./SampleRunnableExecutor.java)
 ## Executor-service
 ExecutorService is sub interface for Executor interface
 Main difference between ES and Executor: 
@@ -27,7 +27,7 @@ Main difference between ES and Executor:
  - lockInteruptibly(): it will interrupted running thread and will get lock for new thread
  
  More Information : http://www.baeldung.com/java-concurrent-locks
- - [LockExample](../Conceptual-Questions/src/main/java/concurrency/LockExample.java)
+ - [LockExample](./LockExample.java)
  
  ## Semaphore
  Introduced in Java 1.5 
