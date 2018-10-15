@@ -15,7 +15,7 @@ Main difference between ES and Executor:
  More information is available in 
  http://www.baeldung.com/java-executor-service-tutorial
  
-![alt text](../resources/ExecutorAndExecutorServiceInJava.png "Difference between Executor and Executor-service")
+![executorandexecutorserviceinjava](https://user-images.githubusercontent.com/24597513/46942853-159f6300-d023-11e8-958e-ef4538dbe03a.png)
 
 ## Lock 
  Introduced in Java 1.5 
