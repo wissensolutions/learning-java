@@ -5,6 +5,9 @@
 - Sample Executors implementation is as below
     -  [NewThreadExecutor](./NewThreadExecutor.java)
     -  [SampleThreadExecutor](./SampleRunnableExecutor.java)
+- There are some in-built thread pools in Java
+    - Fixed Thread pool - No extra thread more than the configured number is created during execution. If there is no free thread available the task has to wait and then execute when one thread is free. 
+    - Cached Thread pool - Existing threads are re-used. If all threads are blocked, then it will create a thread and adds to pool. Threads that have been idle for longer than a timeout period gets removed automatically from the pool.
 ## Executor-service
 ExecutorService is sub interface for Executor interface
 Main difference between ES and Executor: 
