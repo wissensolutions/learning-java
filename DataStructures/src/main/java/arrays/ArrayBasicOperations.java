@@ -1,7 +1,6 @@
 /**
  * arrays
  * <p>
- * @author Amar Veerepalli
  */
 package arrays;
 
