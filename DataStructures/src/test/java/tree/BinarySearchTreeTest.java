@@ -17,79 +17,75 @@ public class BinarySearchTreeTest {
     @Test
     public void testBinarySearchTree(){
         BinarySearchTree<Integer> binaryTree = new BinarySearchTree<>();
-        binaryTree.addNode(15);
-        binaryTree.addNode( 10);
-        binaryTree.addNode( 20);
-        binaryTree.addNode(  8);
-        binaryTree.addNode(12);
-        binaryTree.addNode( 17);
-        binaryTree.addNode( 25);
+        binaryTree.insert(15);
+        binaryTree.insert( 10);
+        binaryTree.insert( 20);
+        binaryTree.insert(  8);
+        binaryTree.insert(12);
+        binaryTree.insert( 17);
+        binaryTree.insert( 25);
 
         Assert.assertEquals(7,binaryTree.size());
-        binaryTree.printTreeInPreOrder();
-        binaryTree.printTreeInInOrder();
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER);
     }
 
     @Test
     public void testBinarySearchTree_RemovalLeaf(){
         BinarySearchTree<Integer> binaryTree = new BinarySearchTree<>();
-        binaryTree.addNode(15);
-        binaryTree.addNode( 10);
-        binaryTree.addNode( 20);
-        binaryTree.addNode(  8);
-        binaryTree.addNode(12);
-        binaryTree.addNode( 17);
-        binaryTree.addNode( 25);
+        binaryTree.insert(15);
+        binaryTree.insert( 10);
+        binaryTree.insert( 20);
+        binaryTree.insert(  8);
+        binaryTree.insert(12);
+        binaryTree.insert( 17);
+        binaryTree.insert( 25);
 
         Assert.assertEquals(7,binaryTree.size());
-        binaryTree.deleteNode(8);
-        binaryTree.printTreeInPreOrder();
+        binaryTree.remove(8);
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER);
+        Assert.assertEquals(6,binaryTree.size());
     }
 
     @Test
     public void testBinarySearchTree_RemovalNodeWithOneChild(){
         BinarySearchTree<Integer> binaryTree = new BinarySearchTree<>();
-        binaryTree.addNode(15);
-        binaryTree.addNode( 10);
-        binaryTree.addNode( 20);
-        binaryTree.addNode(  8);
-        binaryTree.addNode(12);
-        binaryTree.addNode( 17);
-        binaryTree.addNode( 25);
-        binaryTree.addNode( 19);
+        binaryTree.insert(15);
+        binaryTree.insert( 10);
+        binaryTree.insert( 20);
+        binaryTree.insert(  8);
+        binaryTree.insert(12);
+        binaryTree.insert( 17);
+        binaryTree.insert( 25);
+        binaryTree.insert( 19);
 
-       // binaryTree.printTreeInPreOrder();
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER );
+        System.out.println( "\n\n ");
         Assert.assertEquals(8,binaryTree.size());
-        binaryTree.deleteNode(8);
-       // binaryTree.printTreeInPreOrder();
+        binaryTree.remove(8);
         Assert.assertEquals(7,binaryTree.size());
-        binaryTree.deleteNode(17);
+        binaryTree.remove(17);
         Assert.assertEquals(6,binaryTree.size());
-        binaryTree.printTreeInPreOrder();
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER);
     }
 
     @Test
     public void testBinarySearchTree_RemovalNodeWithTwoChild(){
         BinarySearchTree<Integer> binaryTree = new BinarySearchTree<>();
-        binaryTree.addNode(15);
-        binaryTree.addNode( 10);
-        binaryTree.addNode( 20);
-        binaryTree.addNode(  8);
-        binaryTree.addNode(12);
-        binaryTree.addNode( 17);
-        binaryTree.addNode( 25);
-        binaryTree.addNode( 19);
+        binaryTree.insert(15);
+        binaryTree.insert( 10);
+        binaryTree.insert( 20);
+        binaryTree.insert(  8);
+        binaryTree.insert(12);
+        binaryTree.insert( 17);
+        binaryTree.insert( 25);
+        binaryTree.insert( 19);
 
-       binaryTree.printTreeInPreOrder();
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER);
+        System.out.println( "\n\n ");
+
         Assert.assertEquals(8,binaryTree.size());
-        binaryTree.deleteNode(8);
-        // binaryTree.printTreeInPreOrder();
-        Assert.assertEquals(7,binaryTree.size());
-        binaryTree.deleteNode(17);
-        Assert.assertEquals(6,binaryTree.size());
-        //binaryTree.printTreeInPreOrder();
-        binaryTree.deleteNode(15);
-        binaryTree.printTreeInPreOrder();
+        binaryTree.remove(15);
+        binaryTree.traverse(Tree.TraverseMode.PRE_ORDER);
     }
 
 

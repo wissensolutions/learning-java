@@ -64,4 +64,24 @@ public class BinaryTreeTest {
     }
 
 
+    @Test
+    public void testBinaryTreeDelete(){
+        BinaryTree<Integer> binaryTree = new BinaryTree<>();
+        binaryTree.addLeftNode( 13);
+        binaryTree.addLeftNode(12);
+        BinaryTree<Integer>.Node<Integer> rootNode = binaryTree.addRightNode(10);
+        binaryTree.addLeftNodeRecursively(rootNode.getLeftNode(), 4);
+        binaryTree.addRightNodeRecursively(rootNode.getLeftNode(), 19);
+        binaryTree.addLeftNodeRecursively(rootNode.getRightNode(), 16);
+        binaryTree.addRightNodeRecursively(rootNode.getRightNode(), 9);
+//        System.out.println("\n Pre");
+//        binaryTree.printTreeInPreOrder();
+//        System.out.println("\n In");
+//        binaryTree.printTreeInInOrder();
+//        System.out.println("\n Post");
+//        binaryTree.printTreeInPostOrder();
+        binaryTree.delete(12);
+        binaryTree.printTreeInPreOrder();
+
+    }
 }

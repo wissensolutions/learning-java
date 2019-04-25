@@ -94,7 +94,7 @@ public class BinaryTree<T extends Comparable> {
             return null; //Nothing to search
         }
         if(rootNode.value.compareTo(searchValue) == 0){
-            System.out.println(searchValue);
+           // System.out.println(searchValue);
             return rootNode;
         }
 
@@ -105,7 +105,7 @@ public class BinaryTree<T extends Comparable> {
             if(popedNode == null){
                 return null;
             }
-            System.out.println(popedNode.value);
+            //System.out.println(popedNode.value);
             if(popedNode.value.compareTo(searchValue) == 0){
                 return popedNode;
             }
@@ -125,6 +125,43 @@ public class BinaryTree<T extends Comparable> {
         return null;
     }
 
+    //TODO Implement it
+    public void delete(T value){
+        //Search for the node
+        //Search for replaceble elements
+        // Replace with replaceble node's value
+        Node<T> dNode = dfsTravesel(value);
+        if(dNode != null){
+            Node<T> replacableNode = findReplacebleNodeValue();
+            dNode.value = replacableNode.value;
+        } else {
+            throw new IllegalArgumentException("Element is not exist for deletion");
+        }
+    }
+
+    private Node<T> findReplacebleNodeValue(){
+
+        Stack<Node<T>> stack = new Stack<>();
+        Node<T> node = rootNode;
+        while(node.getRightNode() != null){
+            stack.push(node);
+            node = node.rightNode;
+        }
+        if(node.getRightNode()== null && node.getLeftNode()== null){
+            //both null
+            stack.pop().setRightNode(null);
+            return node;
+        }
+        //only Left node exist
+        while(node.getLeftNode() != null){
+            stack.push(node);
+            node = node.leftNode;
+        }
+        stack.pop().setLeftNode(null);
+        return node;
+
+
+    }
 
     // left - > value - > Right
     public void printTreeInInOrder(){
