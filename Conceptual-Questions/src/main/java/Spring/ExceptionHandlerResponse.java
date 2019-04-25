@@ -1,7 +1,6 @@
 package Spring;
 
 /**
- * Created by amarendranadh_v on 12/07/17.
  */
 public class ExceptionHandlerResponse {
 

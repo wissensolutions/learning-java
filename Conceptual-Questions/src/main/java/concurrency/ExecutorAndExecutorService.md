@@ -3,11 +3,8 @@
 - Executors is basically an interface. It provides object which executes submitted tasks
 - It will not mandate the execution to be asynchronous. 
 - Sample Executors implementation is as below
-    -  [NewThreadExecutor](./NewThreadExecutor.java)
-    -  [SampleThreadExecutor](./SampleRunnableExecutor.java)
-- There are some in-built thread pools in Java
-    - Fixed Thread pool - No extra thread more than the configured number is created during execution. If there is no free thread available the task has to wait and then execute when one thread is free. 
-    - Cached Thread pool - Existing threads are re-used. If all threads are blocked, then it will create a thread and adds to pool. Threads that have been idle for longer than a timeout period gets removed automatically from the pool.
+    -  [NewThreadExecutor](../Conceptual-Questions/src/main/java/concurrency/NewThreadExecutor.java)
+    -  [SampleThreadExecutor](../Conceptual-Questions/src/main/java/concurrency/SampleRunnableExecutor.java)
 ## Executor-service
 ExecutorService is sub interface for Executor interface
 Main difference between ES and Executor: 
@@ -18,7 +15,7 @@ Main difference between ES and Executor:
  More information is available in 
  http://www.baeldung.com/java-executor-service-tutorial
  
-![executorandexecutorserviceinjava](https://user-images.githubusercontent.com/24597513/46942853-159f6300-d023-11e8-958e-ef4538dbe03a.png)
+![alt text](../resources/ExecutorAndExecutorServiceInJava.png "Difference between Executor and Executor-service")
 
 ## Lock 
  Introduced in Java 1.5 
@@ -30,7 +27,7 @@ Main difference between ES and Executor:
  - lockInteruptibly(): it will interrupted running thread and will get lock for new thread
  
  More Information : http://www.baeldung.com/java-concurrent-locks
- - [LockExample](./LockExample.java)
+ - [LockExample](../Conceptual-Questions/src/main/java/concurrency/LockExample.java)
  
  ## Semaphore
  Introduced in Java 1.5 

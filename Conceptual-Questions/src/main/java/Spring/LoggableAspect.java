@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by amarendranadh_v on 12/07/17.
  */
 @Aspect
 public class LoggableAspect {
