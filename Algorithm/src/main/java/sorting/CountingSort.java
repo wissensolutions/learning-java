@@ -1,7 +1,6 @@
 /**
  * Class for Counting sort implementation
  * <p>
- * @author WissenSolutions.
  *
  */
 package sorting;

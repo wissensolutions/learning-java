@@ -1,7 +1,6 @@
 /**
  * Class for InsertionSort implementation
  *
- * Created by Amar Veerepalli
  */
 package sorting;
 

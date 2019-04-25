@@ -36,9 +36,7 @@ public class MergeSort extends Sort {
 		int[] rightArray = new int[rightArrayLength];
 
 		//Copy Data into temp arrays
-		for(int i=0;i<leftArrayLength;i++){
-			leftArray[i] = values[lowestPosition+i];
-		}
+		System.arraycopy(values, lowestPosition, leftArray, 0, leftArrayLength);
 		for(int j=0;j<rightArrayLength;j++){
 			rightArray[j] = values[middlePosition+1+j];
 		}
@@ -46,7 +44,7 @@ public class MergeSort extends Sort {
 		int i = 0; // initial index of left array
 		int j = 0; // initial index of right array
 		int k = lowestPosition; // initial index of merged array
-		while (i < leftArrayLength && j < rightArrayLength){
+		while (i <= leftArrayLength && j <= rightArrayLength){
 			if(leftArray[i] > rightArray[j]){
 				values[k] = rightArray[j];
 				j++;

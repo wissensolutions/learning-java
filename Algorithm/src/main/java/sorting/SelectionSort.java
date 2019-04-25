@@ -1,7 +1,6 @@
-/**
+/*
  * Class for InsertionSort implementation
  *
- * @author WissenSolutions.
  */
 package sorting;
 

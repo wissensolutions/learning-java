@@ -5,7 +5,7 @@
 package searching;
 
 
-public class BinarySearch extends Search{
+public class BinarySearch extends Search {
 
     @Override
     int doSearch(int[] inputArr, int searchElement) {
